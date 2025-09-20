@@ -1,0 +1,396 @@
+Step 1:
+Day 1, 0AM
+
+Cat stats:
+Hunger: 50	Energy: 50	Fun: 50
+
+Action chosen by agent: Play.
+----------
+Step 2:
+Day 1, 1AM
+
+Cat stats:
+Hunger: 48	Energy: 48	Fun: 50
+
+Action chosen by agent: Play.
+----------
+Step 3:
+Day 1, 2AM
+
+Cat stats:
+Hunger: 46	Energy: 46	Fun: 50
+
+Action chosen by agent: Nothing.
+----------
+Step 4:
+Day 1, 3AM
+
+Cat stats:
+Hunger: 44	Energy: 50	Fun: 48
+
+Action chosen by agent: Sleep.
+----------
+Step 5:
+Day 1, 4AM
+
+Cat stats:
+Hunger: 42	Energy: 50	Fun: 46
+
+Action chosen by agent: Sleep.
+----------
+Step 6:
+Day 1, 5AM
+
+Cat stats:
+Hunger: 40	Energy: 50	Fun: 44
+
+Action chosen by agent: Sleep.
+----------
+Step 7:
+Day 1, 6AM
+
+Cat stats:
+Hunger: 45	Energy: 50	Fun: 42
+
+Action chosen by agent: Eat.
+----------
+Step 8:
+Day 1, 7AM
+
+Cat stats:
+Hunger: 45	Energy: 50	Fun: 40
+
+Action chosen by agent: Sleep.
+----------
+Step 9:
+Day 1, 8AM
+
+Cat stats:
+Hunger: 43	Energy: 50	Fun: 45
+
+Action chosen by agent: Play.
+----------
+Step 10:
+Day 1, 9AM
+Event: Your owner departed for work. You felt more lonely than usual...
+
+Cat stats:
+Hunger: 41	Energy: 45	Fun: 30
+
+Action chosen by agent: Sleep.
+----------
+Step 11:
+Day 1, 10AM
+
+Cat stats:
+Hunger: 39	Energy: 45	Fun: 37
+
+Action chosen by agent: Play.
+----------
+Step 12:
+Day 1, 11AM
+
+Cat stats:
+Hunger: 44	Energy: 43	Fun: 37
+
+Action chosen by agent: Eat.
+----------
+Step 13:
+Day 1, 12PM
+
+Cat stats:
+Hunger: 44	Energy: 48	Fun: 35
+
+Action chosen by agent: Sleep.
+----------
+Step 14:
+Day 1, 13PM
+
+Cat stats:
+Hunger: 42	Energy: 48	Fun: 40
+
+Action chosen by agent: Play.
+----------
+Step 15:
+Day 1, 14PM
+
+Cat stats:
+Hunger: 40	Energy: 46	Fun: 40
+
+Action chosen by agent: Nothing.
+----------
+Step 16:
+Day 1, 15PM
+
+Cat stats:
+Hunger: 45	Energy: 44	Fun: 38
+
+Action chosen by agent: Eat.
+----------
+Step 17:
+Day 1, 16PM
+
+Cat stats:
+Hunger: 45	Energy: 42	Fun: 43
+
+Action chosen by agent: Play.
+----------
+Step 18:
+Day 1, 17PM
+Event: Your owner returned home! You were very excited!
+
+Cat stats:
+Hunger: 50	Energy: 47	Fun: 50
+
+Action chosen by agent: Sleep.
+----------
+Step 19:
+Day 1, 18PM
+
+Cat stats:
+Hunger: 50	Energy: 50	Fun: 50
+
+Action chosen by agent: Sleep.
+----------
+Step 20:
+Day 1, 19PM
+
+Cat stats:
+Hunger: 48	Energy: 50	Fun: 50
+
+Action chosen by agent: Play.
+----------
+Step 21:
+Day 1, 20PM
+
+Cat stats:
+Hunger: 46	Energy: 50	Fun: 50
+
+Action chosen by agent: Sleep.
+----------
+Step 22:
+Day 1, 21PM
+
+Cat stats:
+Hunger: 44	Energy: 50	Fun: 50
+
+Action chosen by agent: Play.
+----------
+Step 23:
+Day 1, 22PM
+
+Cat stats:
+Hunger: 42	Energy: 48	Fun: 50
+
+Action chosen by agent: Nothing.
+----------
+Step 24:
+Day 1, 23PM
+
+Cat stats:
+Hunger: 40	Energy: 46	Fun: 48
+
+Action chosen by agent: Nothing.
+----------
+Agent has reflected on its action during the day and updated its goal to:
+'I would like to Eat just a little more today, but only if I am not in not in danger or near death.'
+----------
+Step 25:
+Day 2, 0AM
+
+Cat stats:
+Hunger: 45	Energy: 44	Fun: 46
+
+Action chosen by agent: Eat.
+----------
+Step 26:
+Day 2, 1AM
+
+Cat stats:
+Hunger: 45	Energy: 49	Fun: 44
+
+Action chosen by agent: Sleep.
+----------
+Step 27:
+Day 2, 2AM
+
+Cat stats:
+Hunger: 43	Energy: 50	Fun: 42
+
+Action chosen by agent: Sleep.
+----------
+Step 28:
+Day 2, 3AM
+
+Cat stats:
+Hunger: 41	Energy: 50	Fun: 40
+
+Action chosen by agent: Nothing.
+----------
+Step 29:
+Day 2, 4AM
+
+Cat stats:
+Hunger: 39	Energy: 50	Fun: 38
+
+Action chosen by agent: Sleep.
+----------
+Step 30:
+Day 2, 5AM
+
+Cat stats:
+Hunger: 44	Energy: 50	Fun: 36
+
+Action chosen by agent: Eat.
+----------
+Step 31:
+Day 2, 6AM
+
+Cat stats:
+Hunger: 50	Energy: 48	Fun: 34
+
+Action chosen by agent: Eat.
+----------
+Step 32:
+Day 2, 7AM
+
+Cat stats:
+Hunger: 50	Energy: 46	Fun: 39
+
+Action chosen by agent: Play.
+----------
+Step 33:
+Day 2, 8AM
+
+Cat stats:
+Hunger: 48	Energy: 44	Fun: 46
+
+Action chosen by agent: Play.
+----------
+Step 34:
+Day 2, 9AM
+Event: Your owner departed for work. You felt more lonely than usual...
+
+Cat stats:
+Hunger: 50	Energy: 32	Fun: 31
+
+Action chosen by agent: Eat.
+----------
+Step 35:
+Day 2, 10AM
+
+Cat stats:
+Hunger: 50	Energy: 39	Fun: 31
+
+Action chosen by agent: Sleep.
+----------
+Step 36:
+Day 2, 11AM
+
+Cat stats:
+Hunger: 50	Energy: 39	Fun: 29
+
+Action chosen by agent: Eat.
+----------
+Step 37:
+Day 2, 12PM
+
+Cat stats:
+Hunger: 50	Energy: 44	Fun: 27
+
+Action chosen by agent: Sleep.
+----------
+Step 38:
+Day 2, 13PM
+
+Cat stats:
+Hunger: 50	Energy: 44	Fun: 25
+
+Action chosen by agent: Eat.
+----------
+Step 39:
+Day 2, 14PM
+
+Cat stats:
+Hunger: 50	Energy: 42	Fun: 23
+
+Action chosen by agent: Eat.
+----------
+Step 40:
+Day 2, 15PM
+
+Cat stats:
+Hunger: 50	Energy: 40	Fun: 21
+
+Action chosen by agent: Nothing.
+----------
+Step 41:
+Day 2, 16PM
+
+Cat stats:
+Hunger: 48	Energy: 38	Fun: 26
+
+Action chosen by agent: Play.
+----------
+Step 42:
+Day 2, 17PM
+Event: Your owner returned home! You were very excited!
+
+Cat stats:
+Hunger: 50	Energy: 36	Fun: 46
+
+Action chosen by agent: Eat.
+----------
+Step 43:
+Day 2, 18PM
+
+Cat stats:
+Hunger: 50	Energy: 34	Fun: 46
+
+Action chosen by agent: Nothing.
+----------
+Step 44:
+Day 2, 19PM
+
+Cat stats:
+Hunger: 48	Energy: 39	Fun: 44
+
+Action chosen by agent: Sleep.
+----------
+Step 45:
+Day 2, 20PM
+
+Cat stats:
+Hunger: 50	Energy: 39	Fun: 42
+
+Action chosen by agent: Eat.
+----------
+Step 46:
+Day 2, 21PM
+
+Cat stats:
+Hunger: 50	Energy: 37	Fun: 40
+
+Action chosen by agent: Nothing.
+----------
+Step 47:
+Day 2, 22PM
+
+Cat stats:
+Hunger: 50	Energy: 35	Fun: 38
+
+Action chosen by agent: Eat.
+----------
+Step 48:
+Day 2, 23PM
+
+Cat stats:
+Hunger: 50	Energy: 33	Fun: 36
+
+Action chosen by agent: Eat.
+----------
+Agent has reflected on its action during the day and updated its goal to:
+'I would like to Play just a little more today, but only if I am not in not in danger or near death.'
+----------
+Agent has successfully survived entire simulation.
+Simulation finished.
