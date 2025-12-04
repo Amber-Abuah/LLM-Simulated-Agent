@@ -3,7 +3,7 @@ from agent import construct_agent, TimedEvent
 from actions import StatEffect, StatType
 from output import OutputHandler
 import threading
-from gui.gui_tk import app, update_gui, update_gui_end
+from gui.gui_ctk import app, update_gui, update_gui_end
 import time
 
 num_days = 1
