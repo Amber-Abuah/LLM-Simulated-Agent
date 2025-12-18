@@ -55,7 +55,7 @@ bottom_divider.pack(fill="x")
 step_label = ctk.CTkLabel(left_frame, text="Step 0", font=(font, small_font_size))
 step_label.pack()
 
-agent_action_label = ctk.CTkLabel(left_frame, text="", font=(font, small_font_size), justify=ctk.LEFT)
+agent_action_label = ctk.CTkLabel(left_frame, text="", font=(font, small_font_size), justify=ctk.CENTER)
 agent_action_label.pack()
 
 control_frame = ctk.CTkFrame(left_frame)
@@ -104,11 +104,11 @@ def update_need_figure(stat_label:ctk.CTkLabel, need_percentage:float):
 def add_log_entry(output:str):
     log_entries.configure(text=log_entries._text + "\n" + output)
 
-def update_gui(day_hour:str, step:int, action:str, hunger_percentage:float, energy_percentage:float, fun_percentage:float, log:str):
+def update_gui(day_hour:str, step:int, action:str, hunger_percentage:float, energy_percentage:float, fun_percentage:float, log:str, events=[]):
     title_label.configure(text=day_hour)
     step_label.configure(text=f"Step {step+1}")
     agent_art_label.configure(text=build_grid(action))
-    agent_action_label.configure(text=f"Cat has decided to: {action.capitalize()}")
+    agent_action_label.configure(text="".join([f"Event: {e}\n" for e in events]) + f"Cat has decided to: {action.capitalize()}")
 
     update_need_figure(need_state_labels["Hunger"] , hunger_percentage)
     update_need_figure(need_state_labels["Fun"] , fun_percentage)
@@ -125,9 +125,7 @@ def update_gui_end(output:str):
 pause_play_manager = PausePlayManager()
 
 def pause_play():
-    print("button clicked")
     pause_play_manager.invert_is_paused()
-    print("ispaused", pause_play_manager.is_paused)
     pause_button.configure(text="▶" if pause_play_manager.is_paused else "||")
 
 pause_button.configure(command=pause_play)

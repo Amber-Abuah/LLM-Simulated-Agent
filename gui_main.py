@@ -6,7 +6,7 @@ import threading
 from gui.gui_ctk import app, update_gui, update_gui_end, pause_play_manager
 import time
 
-num_days = 1
+num_days = 2
 agent = construct_agent()
 world_state = WorldState()
 output = OutputHandler()
@@ -27,7 +27,7 @@ def agent_step(step):
     fun_percentage = agent.name_to_stats[StatType.Fun].value / agent.name_to_stats[StatType.Fun].max_value
     energy_percentage = agent.name_to_stats[StatType.Energy].value / agent.name_to_stats[StatType.Fun].max_value
 
-    app.after(0, update_gui(str(world_state), step, chosen_action.lower(), hunger_percentage, energy_percentage, fun_percentage, output_log))
+    app.after(0, update_gui(str(world_state), step, chosen_action.lower(), hunger_percentage, energy_percentage, fun_percentage, output_log, [e.event_desc for e in events if e.occur_hour == world_state.hour]))
     agent.step()
 
     if world_state.hour == 23 and step != 0:
