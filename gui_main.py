@@ -3,7 +3,7 @@ from agent import construct_agent, TimedEvent
 from actions import StatEffect, StatType
 from output import OutputHandler
 import threading
-from gui.gui_ctk import app, update_gui, update_gui_end
+from gui.gui_ctk import app, update_gui, update_gui_end, pause_play_manager
 import time
 
 num_days = 1
@@ -38,6 +38,9 @@ def agent_step(step):
 
 def agent_step_loop():
     for step in range(24 * num_days):
+        while pause_play_manager.is_paused:
+            time.sleep(0.5)
+
         agent_step(step)
         time.sleep(step_delay_seconds)
 

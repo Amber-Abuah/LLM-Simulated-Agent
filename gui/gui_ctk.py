@@ -1,5 +1,6 @@
 import customtkinter as ctk
 from gui.gui_cat_drawer import build_grid
+from gui.gui_pause_play import PausePlayManager
 
 ### Visual Settings ------------------------------------------------------------
 
@@ -60,9 +61,8 @@ agent_action_label.pack()
 control_frame = ctk.CTkFrame(left_frame)
 control_frame.pack(pady=10)
 
-for button_type in ["<<", "||", ">>"]:
-    button = ctk.CTkButton(control_frame, text=button_type, font=(font, 12, "bold"), fg_color=button_colour, hover_color=button_hover_colour, width=button_width)
-    button.pack(side=ctk.LEFT, padx=2)
+pause_button = ctk.CTkButton(control_frame, text="||", font=(font, 12, "bold"), fg_color=button_colour, hover_color=button_hover_colour, width=button_width*2)
+pause_button.pack(side=ctk.LEFT, padx=2)
 
 ### Right Frame ------------------------------------------------------------
 # Consists of agent's needs and actions log.
@@ -106,7 +106,7 @@ def add_log_entry(output:str):
 
 def update_gui(day_hour:str, step:int, action:str, hunger_percentage:float, energy_percentage:float, fun_percentage:float, log:str):
     title_label.configure(text=day_hour)
-    step_label.configure(text=f"Step {step}")
+    step_label.configure(text=f"Step {step+1}")
     agent_art_label.configure(text=build_grid(action))
     agent_action_label.configure(text=f"Cat has decided to: {action.capitalize()}")
 
@@ -119,3 +119,15 @@ def update_gui(day_hour:str, step:int, action:str, hunger_percentage:float, ener
 def update_gui_end(output:str):
     agent_action_label.configure(text=output)
     add_log_entry(output)
+
+### Function to control pause/play state  ------------------------------------------------------------
+
+pause_play_manager = PausePlayManager()
+
+def pause_play():
+    print("button clicked")
+    pause_play_manager.invert_is_paused()
+    print("ispaused", pause_play_manager.is_paused)
+    pause_button.configure(text="▶" if pause_play_manager.is_paused else "||")
+
+pause_button.configure(command=pause_play)
