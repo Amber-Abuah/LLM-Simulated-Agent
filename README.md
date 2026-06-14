@@ -1,6 +1,11 @@
-## LLM Simulated Agent  
+## LLM Simulated Agent 
 A survival-based simulation, similar to Tamagotchi, where a virtual cat must autonomously perform actions to increase its chance of survival.
- 
+
+<p align="center">
+ <img height="320" alt="GUI Preview" src="https://github.com/user-attachments/assets/45742543-ff4a-427f-8af4-9f6408fb9877" />
+</p>
+
+---
 ### 💤 Needs  
 The agent has 3 needs:
 - **Hunger**, 

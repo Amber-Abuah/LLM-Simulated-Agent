@@ -16,6 +16,8 @@ class OutputHandler:
         if print_to_console:
             print(output)
 
+        return output
+
     def append_goal_reflection(self, goal: str, print_to_console=True):
         output = f"Agent has reflected on its action during the day and updated its goal to:\n{goal}" + self.seperator
         self.output_stream.append(output)
@@ -32,6 +34,7 @@ class OutputHandler:
 
         output += "\nSimulation finished."
         self.output_stream.append(output)
+        return output
 
     def write_output(self):
         open("agent_output/output.txt", "w").write("\n".join(self.output_stream))

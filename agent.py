@@ -21,6 +21,7 @@ class Agent:
     def __init__(self, stats: list[Stat], possible_actions: list[Action]):
         self.llm = LLM("llama3")
         self.stats = stats
+        self.name_to_stats = {s.stat_type:s for s in stats}
         self.possible_actions = possible_actions
         self.name_to_action = dict([[action.action_name, action] for action in possible_actions])
         self.memories = MemoryStream()
